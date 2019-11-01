@@ -1,0 +1,14 @@
+<mvc:View controllerName="demo_nav.demo_nav.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="Page 1 of Navigation Assignment">
+					<content>
+						<Button text="Go to page 2" press="Onpress1">
+						</Button>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>demo_nav</title>
+		<script id="sap-ui-bootstrap"
+			src="resources/sap-ui-core.js"
+			data-sap-ui-theme="sap_fiori_3"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
+			data-sap-ui-async="true"
+			data-sap-ui-frameOptions="trusted">
+		</script>
+		<script>
+				sap.ui.localResources("demo_nav");
+				var app = new sap.m.App("myapp",{initialPage:"iddemo_nav1"});
+				var page = sap.ui.view({id:"iddemo_nav1", viewName:"demo_nav.View1", type:sap.ui.core.mvc.ViewType.XML});
+				app.addPage(page);
+				app.placeAt("content");
+		</script>
+	</head>
+	<body class="sapUiBody">
+		<div data-sap-ui-component data-name="demo_nav.demo_nav" data-id="container" data-settings='{"id" : "demo_nav"}'></div>
+	</body>
+</html>
